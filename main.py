@@ -6,7 +6,7 @@ import hashlib
 from data_collection import movie_info, popular_movies, random_movie
 from model_training.model import create_model, train_model, predict
 import pyrebase
-from config import config
+from config import config # Contains Firebase Secret Keys
 import os
 import tensorflow.keras as keras
 
