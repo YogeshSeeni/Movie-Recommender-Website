@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+<div class="text-center mt-2">
+    <h1>Hello, {{ session.get('user_name') }}</h1>
+    {% if status == True %}
+        <p>You have trained a model, head over to the predict tab to start getting movies!</p>
+    {% else %}
+        <h2>Head to the train tab to make a model!</h2>
+    {% endif %}
+</div>
+{% endblock %}

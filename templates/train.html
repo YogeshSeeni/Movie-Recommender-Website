@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Train
+{% endblock %}
+
+{% block content %}
+<p style="float: left;" class="ml-2">Negative Reviews: {{ negative_reviews }}</p>
+<p style="float: right;" class="mr-2">Positive Reviews: {{ positive_reviews }}</p>
+<div style="clear: both;"></div>
+<div class="text-center mt-2">
+    <h3>{{ ui[2] }}</h3>
+    <img src = "{{ ui[3] }}" alt="Couldn't get movie image">
+    <h2>{{ ui[0] }} ({{ ui[1] }})</h2>
+    <form action="" method="POST">
+        <button type="submit" name="submit_button" value="idk {{ ui[0] }}" class="btn btn-dark mr-2" style="display: inline-block;">IDK</button>
+        <button type="submit" name="submit_button" value="no {{ ui[0] }}" class="btn btn-danger mr-2" style="display: inline-block;">No</button>
+        <button type="submit" name="submit_button" value="yes {{ ui[0] }}" class="btn btn-success" style="display: inline-block;">Yes</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Predict
+{% endblock %}
+
+{% block content %}
+<div class="text-center mt-2">
+    <h3>{{ ui[2] }}</h3>
+    <img src = "{{ ui[3] }}" alt="Couldn't get movie image">
+    <h2>{{ ui[0] }} ({{ ui[1] }})</h2>
+    <form action="" method="POST">
+        <button type="submit" name="submit_button" class="btn btn-dark mr-2">Next</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Predict Home
+{% endblock %}
+
+{% block content %}
+<div class="text-center mt-2">
+    {% if status == True %}
+        <h2>Press the Start button to start making predictions</h2>
+        <form action="" method="POST">
+            <button type="submit" name="submit_button" class="btn btn-dark mr-2">Start</button>
+        </form>
+    {% else %}
+        <h2>You don't have a model go to the train tab!</h2>
+    {% endif %}
+</div>
+{% endblock %}
